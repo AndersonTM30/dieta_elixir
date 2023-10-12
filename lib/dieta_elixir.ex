@@ -4,7 +4,7 @@ defmodule DietaElixir do
   """
 
   @doc """
-  Hello world.
+  DietaElixir.
 
   ## Examples
 
@@ -13,13 +13,26 @@ defmodule DietaElixir do
 
   """
   def metabolismoBasal(peso, altura, idade) do
-    IO.puts("Peso: #{peso} - Altura: #{altura} - Idade: #{idade}")
+    # IO.puts("Peso: #{peso} - Altura: #{altura} - Idade: #{idade}")
     formulaPeso =  13.8 * peso
-    IO.puts("Form Peso: #{formulaPeso}")
+    # IO.puts("Form Peso: #{formulaPeso}")
     formulaAltura = 5 * altura
-    IO.puts("Form Altura: #{formulaAltura}")
+    # IO.puts("Form Altura: #{formulaAltura}")
     formulaIdade = 6.8 * idade
-    IO.puts("Form Idade: #{formulaIdade}")
+    # IO.puts("Form Idade: #{formulaIdade}")
     _resultado =  (66 + (formulaPeso + formulaAltura)) - formulaIdade
+  end
+
+  @doc """
+  DietaElixir.
+
+  ## Examples
+
+      iex> DietaElixir.quantidadeDeAguaDiaria(84)
+      2940
+
+  """
+  def quantidadeDeAguaDiaria(peso) do
+    _resultado = 35 * peso
   end
 end
