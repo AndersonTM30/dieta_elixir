@@ -4,9 +4,8 @@ defmodule DietaElixir do
   """
 
   @doc """
-  DietaElixir.
 
-  ## Examples
+  ## Example
 
       iex> DietaElixir.metabolismoBasal(84, 170, 31)
       1864.3999999999999
@@ -24,9 +23,8 @@ defmodule DietaElixir do
   end
 
   @doc """
-  DietaElixir.
 
-  ## Examples
+  ## Example
 
       iex> DietaElixir.quantidadeDeAguaDiaria(84)
       2940
@@ -34,5 +32,17 @@ defmodule DietaElixir do
   """
   def quantidadeDeAguaDiaria(peso) do
     _resultado = 35 * peso
+  end
+
+  @doc """
+
+  ## Example
+
+      iex> DietaElixir.retornaPorcentagem(35)
+      0.35
+
+  """
+  def retornaPorcentagem(porcentagem) do
+    _resultado = porcentagem / 100
   end
 end
