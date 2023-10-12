@@ -45,4 +45,17 @@ defmodule DietaElixir do
   def retornaPorcentagem(porcentagem) do
     _resultado = porcentagem / 100 |> Float.ceil(2)
   end
+
+    @doc """
+
+  ## Example
+
+      iex> DietaElixir.retornarDefcitCalorico(1864.4, 20)
+      391.53
+
+  """
+  def retornarDefcitCalorico(tmb, porcentagem) do
+    porcentagem = DietaElixir.retornaPorcentagem(porcentagem)
+    _converterPorcentagemEmNumero = tmb * porcentagem |> Float.ceil(2)
+  end
 end
