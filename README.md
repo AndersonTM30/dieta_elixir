@@ -1,21 +1,9 @@
 # DietaElixir
 
-**TODO: Add description**
+Aplicação para realizar estudos sobre testes unitários
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `dieta_elixir` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:dieta_elixir, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/dieta_elixir>.
+## Como iniciar o projeto:
+Faça um clone da aplicação  
+Instalar as dependências: ``` mix deps.get ```  
+Executar os testes: ``` mix test ```  
 
