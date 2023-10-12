@@ -13,4 +13,8 @@ defmodule DietaElixirTest do
   test "deve retornar porcentagem" do
     assert DietaElixir.retornaPorcentagem(35) == 0.35
   end
+
+  test "deve retornar o défcit calórico" do
+    assert DietaElixir.retornarDefcitCalorico(DietaElixir.metabolismoBasal(84, 170, 31), 20) == 391.53
+  end
 end
