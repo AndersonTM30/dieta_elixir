@@ -8,7 +8,7 @@ defmodule DietaElixir do
   ## Example
 
       iex> DietaElixir.metabolismoBasal(84, 170, 31)
-      1864.3999999999999
+      1864.4
 
   """
   def metabolismoBasal(peso, altura, idade) do
@@ -19,7 +19,7 @@ defmodule DietaElixir do
     # IO.puts("Form Altura: #{formulaAltura}")
     formulaIdade = 6.8 * idade
     # IO.puts("Form Idade: #{formulaIdade}")
-    _resultado =  (66 + (formulaPeso + formulaAltura)) - formulaIdade
+    _resultado =  (66 + (formulaPeso + formulaAltura)) - formulaIdade |> Float.ceil(2)
   end
 
   @doc """
@@ -43,6 +43,6 @@ defmodule DietaElixir do
 
   """
   def retornaPorcentagem(porcentagem) do
-    _resultado = porcentagem / 100
+    _resultado = porcentagem / 100 |> Float.ceil(2)
   end
 end

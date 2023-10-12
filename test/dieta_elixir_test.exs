@@ -3,7 +3,7 @@ defmodule DietaElixirTest do
   doctest DietaElixir
 
   test "deve retornar a taxa de metabolismo basal" do
-    assert DietaElixir.metabolismoBasal(84, 170, 31) == 1864.3999999999999
+    assert DietaElixir.metabolismoBasal(84, 170, 31) == 1864.4
   end
 
   test "deve retornar a quantidade de água que deve tomar e ml" do
