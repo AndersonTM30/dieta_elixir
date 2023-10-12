@@ -9,4 +9,8 @@ defmodule DietaElixirTest do
   test "deve retornar a quantidade de água que deve tomar e ml" do
     assert DietaElixir.quantidadeDeAguaDiaria(84) == 2940
   end
+
+  test "deve retornar porcentagem" do
+    assert DietaElixir.retornaPorcentagem(35) == 0.35
+  end
 end
