@@ -21,4 +21,8 @@ defmodule DietaElixirTest do
   test "deve retornar a taxa de metabolismo basal em uma dieta de défcit calórico" do
     assert DietaElixir.retornarTMBEmDefictCalorico(1864.4, 391.53) == 1472.88
   end
+
+  test "deve retornar a quantidade de carboidratos / proteína de acordo com a TMB" do
+    assert DietaElixir.retornaQtdCHOOuPTN(1472.88, 60) == 220.93
+  end
 end
