@@ -72,4 +72,17 @@ defmodule DietaElixir do
     taxaDefcit = defcitCalorico
     _resultado = (taxaTMB - taxaDefcit) |> Float.ceil(2)
   end
+
+    @doc """
+
+  ## Example
+
+      iex> DietaElixir.retornaQtdCHOOuPTN(1472.88, 60)
+      220.93
+
+  """
+  def retornaQtdCHOOuPTN(tmb, porcentagem) do
+    porcentagem =  retornaPorcentagem(porcentagem)
+    _resultado = (tmb * porcentagem) / 4 |> Float.round(2)
+  end
 end
